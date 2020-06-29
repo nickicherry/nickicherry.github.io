@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicki Cherry</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="stylesheet" href="https://use.typekit.net/scd1tgp.css">
+
+<link rel="stylesheet" type="text/css" href="css/bulma.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+<body class="tulip-bg">
+  <nav class="navbar home" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        Nicki Cherry
+      </a>
+    </div>
+  </nav>
+
+  <div class="columns home-nav-section no-padding">
+    <div class="column">
+      <section class="section">
+        <div class="container">
+          <aside class="menu big-nav">
+            <ul class="menu-list">
+              <li><a class="big-nav-menu-toggle work"> Work </a></li>
+              <li><a class="big-nav-menu-toggle cv"> CV </a></li>
+              <li><a class="big-nav-menu-toggle bio"> Bio </a></li>
+            </ul>
+          </aside>
+        </div>
+
+      </section>
+    </div>
+
+    <div class="column big-nav-menu work">
+      <a href="#" class="close"> X </a>
+      <section class="section">
+        <div class="container work-nav">
+          <h3 class="date">2020</h3>
+          <a>Out of the mouth, into the calf</a>
+
+          <h3 class="date">2019</h3>
+          <a>Cutting the stone</a>
+          <a>Tepal</a>
+
+          <h3 class="date">2018</h3>
+          <a>Fountain</a>
+          <a>Gameboard</a>
+          <a>Cortices</a>
+          <a>Meeting stasis halfway</a>
+
+          <h3 class="date">2017</h3>
+          <a>Well I'm a Tumbler</a>
+          <a>Assesing my shape: tying a shoe</a>
+          <a>Aspirational prosthetics</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="column big-nav-menu cv">
+      <a href="#" class="close"> X </a>
+      <section class="section">
+        <div class="container">
+          CV
+        </div>
+      </section>
+    </div>
+
+    <div class="column big-nav-menu bio">
+      <a href="#" class="close"> X </a>
+      <section class="section">
+        <div class="container">
+          Bio
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+
+    // Check for click events on the navbar burger icon
+    $(".big-nav-menu-toggle").click(function() {
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        if ($(this).hasClass("work")){
+          $(".big-nav-menu").removeClass("is-active");
+          $(".big-nav-menu-toggle").removeClass("is-active");
+          $(".big-nav-menu.work").toggleClass("is-active");
+          $(this).addClass("is-active");
+        }
+
+        if ($(this).hasClass("cv")) {
+          $(".big-nav-menu").removeClass("is-active");
+          $(".big-nav-menu-toggle").removeClass("is-active");
+          $(".big-nav-menu.bio").toggleClass("is-active");
+          $(this).addClass("is-active");
+        }
+
+        if ($(this).hasClass("bio")){
+          $(".big-nav-menu").removeClass("is-active");
+          $(".big-nav-menu-toggle").removeClass("is-active");
+          $(".big-nav-menu.cv").toggleClass("is-active");
+          $(this).addClass("is-active");
+        }
+
+    });
+
+    $(".big-nav-menu a.close").click(function() {
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".big-nav-menu").removeClass("is-active");
+        $(".big-nav-menu-toggle").removeClass("is-active");
+
+      });
+  });
+</script>
+</body>
+</html>
