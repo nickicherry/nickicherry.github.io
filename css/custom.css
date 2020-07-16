@@ -219,7 +219,7 @@ a.big-nav-menu-toggle.is-active{
 /* typography */
 
 h1{
-  font-size: 50px;
+  font-size: calc(30px + 2vw);
   font-weight: 200;
   font-style: italic;
   text-decoration: underline;
@@ -228,7 +228,7 @@ h1{
 }
 
 h2{
-  font-size: 18px;
+  font-size: calc(14px + 0.5vw);
   font-weight: 200;
   margin-bottom: 10px;
 }
@@ -250,7 +250,7 @@ figure.slide img{
 }
 
 figure.slide figcaption{
-  font-size: 18px;
+  font-size: calc(12px + 0.5vw);
   font-weight: 200;
   max-width: 1000px;
 }
@@ -276,6 +276,21 @@ figure.slide figcaption{
 
 #imagegrid img:hover{
   opacity: 50%;
+}
+
+@media screen and (min-width: 1024px){
+
+  h1{
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  figure.slide figcaption{
+    font-size: 18px;
+  }
 }
 
 
