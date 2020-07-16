@@ -23,71 +23,85 @@
         Nicki Cherry
       </a>
 
+
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
+
     </div>
 
     <div class="navbar-menu">
-      <a class="navbar-item work-toggle">
+
+      <a role="button" class="navbar-item mobile-work">
         Work
       </a>
 
-      <a class="navbar-item">
+      <a href="/cv" class="navbar-item">
         CV
       </a>
 
-      <a class="navbar-item">
-        Bio
+      <a href="/info" class="navbar-item">
+        Info
+      </a>
+
+      <a href="/contact" class="navbar-item">
+        Contact
       </a>
     </div>
 
   </nav>
 
 
-  <div class="column big-nav-menu work">
-    <a class="close"> X </a>
-    <section class="section">
-      <div class="container work-nav">
-        <h3 class="date">2020</h3>
-        <a>Out of the mouth, into the calf</a>
+  <div class="columns no-padding">
 
-        <h3 class="date">2019</h3>
-        <a>Cutting the stone</a>
-        <a>Tepal</a>
+    <div class="column work-sidebar is-one-fifth">
+      <section class="section">
+        <a href="#" class="close"> X </a>
+        <div class="work-nav-container">
+          <div class="container work-nav">
+            <h3 class="date">2020</h3>
+            <a href="/work/out-of-the-mouth">Out of the mouth, into the calf</a>
 
-        <h3 class="date">2018</h3>
-        <a>Fountain</a>
-        <a>Gameboard</a>
-        <a>Cortices</a>
-        <a>Meeting stasis halfway</a>
+            <h3 class="date">2019</h3>
+            <a href="/work/cutting-the-stone">Cutting the stone</a>
+            <a href="/work/tepal">Tepal</a>
 
-        <h3 class="date">2017</h3>
-        <a>Well I'm a Tumbler</a>
-        <a>Assesing my shape: tying a shoe</a>
-        <a>Aspirational prosthetics</a>
+            <h3 class="date">2018</h3>
+            <a href="/work/fountain">Fountain</a>
+            <a href="/work/gameboard">Gameboard</a>
+            <a href="/work/cortices">Cortices</a>
+            <a href="/work/meeting-stasis-halfway">Meeting stasis halfway</a>
+
+            <h3 class="date">2017</h3>
+            <a href="/work/well-im-a-tumbler">Well I'm a Tumbler</a>
+            <a href="/work/assessing-my-shape">Assesing my shape: tying a shoe</a>
+            <a href="/work/aspirational-prosthetics">Aspirational prosthetics</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  <div class="column">
+
+    <div class="section">
+      <div class="container">
+        <h1> Tepal </h1>
+        <h2> October 2019</h2>
+        <h2> Fiberglass, epoxy resin, plaster, pigments, wax, & blown glass </h2>
+        <h2> 15" x 48" x 30” </h2>
+        </h2>
+
+        <figure class="slide">
+          <img src="../img/work/2019/tepal/1.jpg">
+        </figure>
+
+        <figure class="slide">
+          <img src="../img/work/2019/tepal/2.jpg">
+        </figure>
+
       </div>
-    </section>
-  </div>
-
-  <div class="section">
-    <div class="container">
-      <h1> Tepal </h1>
-      <h2> October 2019</h2>
-      <h2> Fiberglass, epoxy resin, plaster, pigments, wax, & blown glass <h2>
-      <h2> 15" x 48" x 30” </h2>
-      </h2>
-
-      <figure class="slide">
-        <img src="../img/work/2019/tepal/1.jpg">
-      </figure>
-
-      <figure class="slide">
-        <img src="../img/work/2019/tepal/2.jpg">
-      </figure>
-
     </div>
   </div>
 
@@ -95,62 +109,8 @@
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script>
-  $(document).ready(function() {
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="../js/nav.js"></script>
 
-    // Check for click events on the navbar burger icon
-    $(".big-nav-menu-toggle").click(function() {
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        if ($(this).hasClass("work")){
-          $(".big-nav-menu").removeClass("is-active");
-          $(".big-nav-menu-toggle").removeClass("is-active");
-          $(".big-nav-menu.work").toggleClass("is-active");
-          $(this).addClass("is-active");
-        }
-
-        if ($(this).hasClass("cv")) {
-          $(".big-nav-menu").removeClass("is-active");
-          $(".big-nav-menu-toggle").removeClass("is-active");
-          $(".big-nav-menu.bio").toggleClass("is-active");
-          $(this).addClass("is-active");
-        }
-
-        if ($(this).hasClass("bio")){
-          $(".big-nav-menu").removeClass("is-active");
-          $(".big-nav-menu-toggle").removeClass("is-active");
-          $(".big-nav-menu.cv").toggleClass("is-active");
-          $(this).addClass("is-active");
-        }
-
-    });
-
-    $(".work-toggle").click(function() {
-      $(".big-nav-menu.work").toggleClass("is-active");
-    });
-
-    $(".big-nav-menu a.close").click(function() {
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".big-nav-menu").removeClass("is-active");
-        $(".big-nav-menu-toggle").removeClass("is-active");
-
-      });
-  });
-</script>
-
-<script>
-  $(document).ready(function() {
-
-  // Check for click events on the navbar burger icon
-  $(".navbar-burger").click(function() {
-
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
-
-  });
-});
-</script>
 </body>
 </html>
