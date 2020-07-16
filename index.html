@@ -16,7 +16,8 @@
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
 </head>
-<body class="tulip-bg">
+<body>
+
   <nav class="navbar home" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="index.html">
@@ -25,107 +26,65 @@
     </div>
   </nav>
 
-  <div class="columns home-nav-section no-padding">
+  <div class="columns home-nav-section no-padding tulip-bg">
     <div class="column">
       <section class="section">
         <div class="container">
           <aside class="menu big-nav">
             <ul class="menu-list">
-              <li><a class="big-nav-menu-toggle work"> Work </a></li>
-              <li><a class="big-nav-menu-toggle cv"> CV </a></li>
-              <li><a class="big-nav-menu-toggle bio"> Bio </a></li>
+              <li><a href="#work"> Work </a></li>
+              <li><a href="cv.html"> CV </a></li>
+              <li><a href="bio.html"> Bio </a></li>
             </ul>
           </aside>
         </div>
-
       </section>
     </div>
-
-    <div class="column big-nav-menu work">
-      <a href="#" class="close"> X </a>
-      <section class="section">
-        <div class="container work-nav">
-          <h3 class="date">2020</h3>
-          <a>Out of the mouth, into the calf</a>
-
-          <h3 class="date">2019</h3>
-          <a>Cutting the stone</a>
-          <a>Tepal</a>
-
-          <h3 class="date">2018</h3>
-          <a>Fountain</a>
-          <a>Gameboard</a>
-          <a>Cortices</a>
-          <a>Meeting stasis halfway</a>
-
-          <h3 class="date">2017</h3>
-          <a>Well I'm a Tumbler</a>
-          <a>Assesing my shape: tying a shoe</a>
-          <a>Aspirational prosthetics</a>
-        </div>
-      </section>
-    </div>
-
-    <div class="column big-nav-menu cv">
-      <a href="#" class="close"> X </a>
-      <section class="section">
-        <div class="container">
-          CV
-        </div>
-      </section>
-    </div>
-
-    <div class="column big-nav-menu bio">
-      <a href="#" class="close"> X </a>
-      <section class="section">
-        <div class="container">
-          Bio
-        </div>
-      </section>
-    </div>
-
   </div>
+
+  <section class="section" id="work">
+      <div class="container">
+
+       <div id="imagegrid" class="grid mb-5" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "percentPosition": "true" }'>
+         <div class="grid-sizer"></div>
+
+         <div class="grid-item"><a href="work/out-of-the-mouth.html"><img src="img/work/2020/out-of-the-mouth/1.jpg"></a></div>
+         <div class="grid-item"><a href="work/tepal.html"><img src="img/work/2019/tepal/1.jpg"></a></div>
+         <div class="grid-item"><a href="work/cutting-the-stone.html"><img src="img/work/2019/cutting-the-stone/1.jpg"></a></div>
+         <div class="grid-item"><a href="work/fountain.html"><img src="img/work/2018/fountain/1.jpg"></a></div>
+         <div class="grid-item"><a href="work/cortices.html"><img src="img/work/2018/cortices/1.jpg"></a></div>
+         <div class="grid-item"><a href="work/gameboard.html"><img src="img/work/2018/gameboard/1.jpg"></a></div>
+         <div class="grid-item"><a href="work/meeting-stasis-halfway.html"><img src="img/work/2018/meeting-stasis-halfway/1.jpg"></a></div>
+         <div class="grid-item"><a href="work/well-im-a-tumbler.html"><img src="img/work/2017/well-im-a-tumbler/well-im-a-tumbler-detail.jpg"></a></div>
+         <div class="grid-item"><a href="work/assessing-my-shape.html"><img src="img/work/2017/assessing-my-shape/1.jpg"></a></div>
+         <div class="grid-item"><a href="work/aspirational-prosthetics.html"><img src="img/work/2017/aspirational-prosthetics/1.jpg"></a></div>
+
+       </div>
+
+      </div>
+    </section>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="js/nav.js"></script>
+
 <script>
-  $(document).ready(function() {
+  var $images = $('.grid-item');
+  $images.hide();
 
-    // Check for click events on the navbar burger icon
-    $(".big-nav-menu-toggle").click(function() {
+  var $grid = $('.grid');
+  $grid.imagesLoaded( function() {
+    $images.fadeIn();
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        if ($(this).hasClass("work")){
-          $(".big-nav-menu").removeClass("is-active");
-          $(".big-nav-menu-toggle").removeClass("is-active");
-          $(".big-nav-menu.work").toggleClass("is-active");
-          $(this).addClass("is-active");
-        }
-
-        if ($(this).hasClass("cv")) {
-          $(".big-nav-menu").removeClass("is-active");
-          $(".big-nav-menu-toggle").removeClass("is-active");
-          $(".big-nav-menu.bio").toggleClass("is-active");
-          $(this).addClass("is-active");
-        }
-
-        if ($(this).hasClass("bio")){
-          $(".big-nav-menu").removeClass("is-active");
-          $(".big-nav-menu-toggle").removeClass("is-active");
-          $(".big-nav-menu.cv").toggleClass("is-active");
-          $(this).addClass("is-active");
-        }
-
+    $grid.masonry({
+      // options
+      itemSelector: '.grid-item'
     });
-
-    $(".big-nav-menu a.close").click(function() {
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".big-nav-menu").removeClass("is-active");
-        $(".big-nav-menu-toggle").removeClass("is-active");
-
-      });
   });
 </script>
+
 </body>
 </html>

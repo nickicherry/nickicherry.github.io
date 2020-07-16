@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: Granville, serif;
   font-size: 20px;
@@ -26,7 +30,6 @@ body{
   background-color: unset;
   position: fixed;
 }
-
 .navbar-brand .navbar-item{
   font-family: Granville, serif;
   font-weight: 700;
@@ -62,12 +65,17 @@ body{
 }
 
 .home-nav-section{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 10vh;
   align-items: stretch;
   overflow: scroll;
+}
+
+.home-nav-section .section{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .no-padding .column{
@@ -86,7 +94,7 @@ body{
   font-family: Granville, serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 180px;
+  font-size: calc(80px + 3vw);
   line-height: 1;
   margin-bottom: 50px;
   color: #202228;
@@ -247,14 +255,38 @@ figure.slide figcaption{
   max-width: 1000px;
 }
 
-@media screen and (max-width: 769px){
+/* masonry grid */
+.grid-sizer,
+.grid-item {
+  width: calc(100%/3);
+  position: : relative;
+}
+
+.grid-item{
+  padding: 0.5em;
+}
+
+#imagegrid{
+  margin: -0.5em;
+}
+
+#imagegrid img{
+  transition: all 0.3s;
+}
+
+#imagegrid img:hover{
+  opacity: 50%;
+}
+
+
+@media screen and (max-width: 1024px){
   .work-sidebar{
     position: fixed;
     top: 0;
     right: -50%;
     z-index: 200;
     background-color: #fff;
-    width: 100%;
+    width: 100% !important;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -276,6 +308,20 @@ figure.slide figcaption{
 
   .work-sidebar .section{
     position: unset;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 1.5em;
+
+  }
+
+  .work-nav-container{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .work-sidebar .container.work-nav{
+    padding-bottom: 1em;
   }
 
   .work-sidebar .close{
@@ -289,4 +335,13 @@ figure.slide figcaption{
   .mobile-work{
     display: flex !important;
   }
+}
+
+@media screen and (max-width: 764px){
+
+  .grid-sizer,
+  .grid-item {
+    width: calc(100%/2);
+  }
+
 }
