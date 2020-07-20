@@ -7007,7 +7007,7 @@ a.list-item {
   color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: is-vcentered1024px) {
   .navbar.is-danger .navbar-start > .navbar-item,
   .navbar.is-danger .navbar-start .navbar-link,
   .navbar.is-danger .navbar-end > .navbar-item,

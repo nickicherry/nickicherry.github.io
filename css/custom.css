@@ -9,6 +9,22 @@ body{
   color: #202228;
 }
 
+a,
+a.navbar-item{
+ color: #3f707d;
+ transition: all 0.1s;
+}
+
+a:hover,
+a.navbar-item:hover{
+  color: #3f707d;
+  text-decoration: underline;
+}
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active{
+  background: none;
+}
+
 
 .tulip-bg{
   background-image: url(../img/lubbert-bg.jpg);
@@ -60,7 +76,7 @@ body{
 
 .navbar-burger:hover{
   background-color: unset;
-  color: blue;
+  color: #3f707d;
   cursor: pointer;
 }
 
@@ -187,6 +203,14 @@ a.big-nav-menu-toggle.is-active{
   display: none;
 }
 
+.info .bio{
+  max-width: 800px
+}
+
+.cv, .info{
+  margin-top: 1em;
+}
+
 .cv .row{
   display: flex;
   margin-bottom: 10px;
@@ -237,6 +261,10 @@ h2 + .slide{
   margin-top: 20px;
 }
 
+p{
+  font-size: calc(14px + 0.5vw);
+}
+
 /* work slides */
 
 figure.slide{
@@ -245,7 +273,7 @@ figure.slide{
 }
 
 figure.slide img{
-  max-height: 75vh;
+  max-height: 85vh;
   margin-bottom: 5px;
 }
 
@@ -288,8 +316,12 @@ figure.slide figcaption{
     font-size: 20px;
   }
 
-  figure.slide figcaption{
+  p{
     font-size: 18px;
+  }
+
+  figure.slide figcaption{
+    font-size: 16px;
   }
 }
 
