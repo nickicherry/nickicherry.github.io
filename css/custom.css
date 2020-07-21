@@ -34,6 +34,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   min-height: 100vh;
 }
 
+.white-bg{
+  background-color: #fff;
+}
+
 .navbar{
   position: fixed;
   top: 0;
@@ -52,6 +56,12 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   font-style: normal;
   color: #202228;
   font-size: 20px;
+  width: 7.1em;
+}
+
+.navbar-brand .navbar-item:hover{
+  color: unset;
+  font-style: italic;
 }
 
 .navbar-menu{
@@ -74,6 +84,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   display: none !important;
 }
 
+.mobile-work.home{
+  font-size: 18px !important;
+  padding-bottom: 1em;
+}
+
 .navbar-burger:hover{
   background-color: unset;
   color: #3f707d;
@@ -86,6 +101,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   align-items: center;
   align-items: stretch;
   overflow: scroll;
+  position: sticky;
+  top: 0;
 }
 
 .home-nav-section .section{
@@ -186,7 +203,7 @@ a.big-nav-menu-toggle.is-active{
 }
 
 .work-sidebar .section{
-  position: fixed;
+  position: sticky;
   top: 10px;
 }
 
@@ -248,7 +265,6 @@ h1{
   font-style: italic;
   text-decoration: underline;
   margin-bottom: 5px;
-  margin-top: 20px;
 }
 
 h2{
