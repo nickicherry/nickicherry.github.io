@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  background-color: #fff;
 }
 
 body{
@@ -180,6 +181,10 @@ a.big-nav-menu-toggle.is-active{
   font-weight: 700;
 }
 
+.work-nav h2{
+  margin-top: 20px;
+}
+
 .work-nav h3{
   font-weight: 700;
   padding-bottom: 0;
@@ -203,7 +208,6 @@ a.big-nav-menu-toggle.is-active{
 .work-sidebar{
   position: relative;
   margin-right: 50px;
-  background-color: #fff;
 }
 
 .work-sidebar .section{
@@ -264,10 +268,9 @@ a.big-nav-menu-toggle.is-active{
 /* typography */
 
 h1{
-  font-size: calc(30px + 2vw);
-  font-weight: 200;
+  font-size: calc(20px + 1vw);
+  font-weight: 700;
   font-style: italic;
-  text-decoration: underline;
   margin-bottom: 5px;
 }
 
@@ -293,6 +296,10 @@ h2 + .slide{
 p{
   font-size: calc(14px + 0.5vw);
   margin-bottom: 1em;
+}
+
+h1, h2, figcaption{
+  max-width: 800px;
 }
 
 /* form */
@@ -347,7 +354,6 @@ input:focus{
 /* work slides */
 
 figure.slide{
-  background-color: #fff;
   margin-bottom: 40px;
 }
 
@@ -388,11 +394,11 @@ figure.slide figcaption{
 @media screen and (min-width: 1024px){
 
   h1{
-    font-size: 50px;
+    font-size: 30px;
   }
 
   h2{
-    font-size: 20px;
+    font-size: 18px;
   }
 
   p{
