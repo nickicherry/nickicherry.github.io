@@ -185,6 +185,10 @@ a.big-nav-menu-toggle.is-active{
   padding-bottom: 5px;
   border-bottom: 1px solid #202228;
   margin-bottom: 20px;
+  font-size: unset;
+  margin-top: 0;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .work-nav a + h3{
