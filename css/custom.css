@@ -10,6 +10,9 @@ body{
   color: #202228;
 }
 
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 a,
 a.navbar-item{
  color: #3f707d;
@@ -474,6 +477,11 @@ figure.slide figcaption{
   .grid-sizer,
   .grid-item {
     width: calc(100%/2);
+  }
+
+  .big-nav .menu-list li a:hover{
+    font-style: normal;
+    text-decoration: underline;
   }
 
 }
