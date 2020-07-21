@@ -328,10 +328,24 @@ input{
   font-family: Granville, serif;
   color: #202228;
   font-weight: 400;
+  border: 1px solid #bec3c4;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+input:hover{
+  border-color: #aab4b6;
 }
 
 input:focus{
-  outline: #3f707d auto 1px;
+  outline: none;
+  -webkit-outline: none;
+  -moz-outline: none;
+  border-color: #3f707d;
 }
 
 .button{
@@ -345,6 +359,7 @@ input:focus{
   height: auto;
   max-width: 200px;
   transition: background-color 0.3s;
+  border-radius: 2px;
 }
 
 .button:hover{
