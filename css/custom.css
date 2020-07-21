@@ -182,9 +182,9 @@ a.big-nav-menu-toggle.is-active{
 
 .work-nav h3{
   font-weight: 700;
-  padding-bottom: 5px;
+  padding-bottom: 0;
   border-bottom: 1px solid #202228;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: unset;
   margin-top: 0;
   text-decoration: none;
@@ -192,11 +192,11 @@ a.big-nav-menu-toggle.is-active{
 }
 
 .work-nav a + h3{
-  margin-top: 60px;
+  margin-top: 30px !important;
 }
 
 .work-nav a{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: block;
 }
 
