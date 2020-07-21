@@ -470,6 +470,15 @@ figure.slide figcaption{
   .mobile-work{
     display: flex !important;
   }
+
+  .column.work-sidebar.is-one-fifth + .column{
+    padding: 1em 0 0 0;
+  }
+
+  figure.slide{
+    margin-bottom: 25px;
+  }
+
 }
 
 @media screen and (max-width: 764px){
@@ -483,5 +492,18 @@ figure.slide figcaption{
     font-style: normal;
     text-decoration: underline;
   }
+
+  .section{
+    padding: 3rem 1rem;
+  }
+
+  .cv .row .date{
+    width: 20%;
+    padding-right: 15px;
+  }
+
+  .navbar-brand .navbar-item{
+    font-size: 16px;
+    width: auto;}
 
 }
