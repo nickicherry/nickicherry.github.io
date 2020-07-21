@@ -273,12 +273,71 @@ h2{
   margin-bottom: 10px;
 }
 
+h3{
+  font-size: calc(16px + 0.25vw);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  margin-top: 2em;
+  text-decoration: underline;
+  font-style: italic;
+}
+
 h2 + .slide{
   margin-top: 20px;
 }
 
 p{
   font-size: calc(14px + 0.5vw);
+  margin-bottom: 1em;
+}
+
+/* form */
+
+h3 + .mc-field-group{
+  margin-top: 1em;
+}
+
+label{
+  font-weight: 700;
+  margin-bottom: 0.25em;
+  display: block;
+  font-size: calc(12px + 0.25vw);
+}
+
+input{
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+  font-size: calc(12px + 0.25vw);
+  padding: 0.5em;
+  font-family: Granville, serif;
+  color: #202228;
+  font-weight: 400;
+}
+
+input:focus{
+  outline: #3f707d auto 1px;
+}
+
+.button{
+  color: #fff;
+  border-color: #3f707d;
+  background-color: #3f707d;
+  font-weight: 700;
+  padding: 0.5em;
+  font-size: calc(12px + 0.25vw);
+  margin-top: 1em;
+  height: auto;
+  max-width: 200px;
+  transition: background-color 0.3s;
+}
+
+.button:hover{
+  background: none;
+  color: #fff;
+  border-color: #1a3f49;
+  background-color: #1a3f49;
 }
 
 /* work slides */
