@@ -112,6 +112,7 @@
  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
  <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
  <script src="js/nav.js"></script>
+ <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 
  <script>
   var $images = $('.grid-item');
@@ -126,6 +127,10 @@
       itemSelector: '.grid-item'
     });
   });
+</script>
+
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 
 </body>
