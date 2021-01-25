@@ -1,4 +1,4 @@
 # nickicherry.github.io
-A website for Nicki Cherry's art.
+A portfolio site for Nicki Cherry's art.
 
-Built using a Bulma CSS framework.
+Built using Jekyll and Bulma .
