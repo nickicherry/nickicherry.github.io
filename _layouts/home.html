@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<nav class="navbar home" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        Nicki Cherry
+      </a>
+    </div>
+  </nav>
+
+  <div class="columns home-nav-section no-padding tulip-bg">
+    <div class="column">
+      <section class="section">
+        <div class="container">
+          <aside class="menu big-nav">
+            <ul class="menu-list">
+              <li><a href="#work"> Work </a></li>
+              <li><a href="cv.html"> CV </a></li>
+              <li><a href="info.html"> Info </a></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="section is-relative white-bg" id="work">
+    <div class="columns no-padding">
+      {% include work.html %}
+      <div class="column">
+        <div class="container">
+          <a role="button" class="mobile-work home">
+            Navigate work 🌷
+          </a>
+            {{ content }}
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+ <script>
+  var $images = $('.grid-item');
+  $images.hide();
+
+  var $grid = $('.grid');
+  $grid.imagesLoaded( function() {
+    $images.fadeIn();
+
+    $grid.masonry({
+      // options
+      itemSelector: '.grid-item'
+    });
+  });
+</script>
+
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
