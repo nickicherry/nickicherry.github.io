@@ -1,0 +1,33 @@
+---
+title: Flower Shop
+layout: shop
+---
+<div class="shop">
+
+  <p>
+    Living & growing with art is an incredibly enriching experience that should be accessible to anyone. I've made these more affordable pieces small enough that they can easily be installed in a living space. They are priced between $50-$500 (with most under $100).
+  </p>
+  <p>
+    If you're interested in commissioning a work, feel free to
+    <a href= "mailto:nicki.cherry.studio@gmail.com?subject = Commission&body = Message" class="text-bold"> email me</a> with a price-point.
+  </p>
+  <p>
+    Thank you for browsing & investing in my practice!
+  </p>
+
+  {% assign groups = site.products | group_by: "category" | sort: "name" %}
+
+  {% for group in groups %}
+    <div class="product-group" id="{{ group.name }}">
+      <h1 class="mb-1em"> {{ group.name | slice: 2,100000 }}</h1>
+      <div class="product-grid-wrapper">
+        {% for item in group.items %}
+          <a href="{{ item.url }}" class="product-grid">
+            <img src="{{ item.image }}" alt="{{ item.name }} product image" class="product__image">
+          </a>
+        {%endfor%}
+      </div>
+    </div>
+  {%endfor%}
+
+</div>

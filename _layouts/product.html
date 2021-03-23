@@ -1,0 +1,32 @@
+---
+title: Flower Shop
+layout: shop
+---
+<div class="product">
+
+  <div class="columns flex is-vcentered">
+    <div class="column">
+      <img src="{{ page.image }}" alt="{{ page.name }} product image" class="product__image">
+    </div>
+    <div class="column">
+     <div class="product__information">
+
+        <h1 class="product__title">{{ page.name }}</h1>
+        <h3 class="product__price">${{ page.price }}</h3>
+        <div class="product__description">{{ page.content }}</div>
+        <button
+         class="buy-button snipcart-add-item button"
+         data-item-id="{{ page.identifier }}"
+         data-item-name="{{ page.name }}"
+         data-item-price="{{ page.price }}"
+         data-item-image="{{ page.image }}"
+         data-item-url="https://nickicherry.com{ page.url }}"
+         data-item-description="{{ page.content | remove: '<p>' | remove: '</p>' }}"
+         data-item-max-quantity="1"
+         data-item-stackable="always">
+         Add to cart
+        </button>
+     </div>
+    </div>
+  </div>
+</div>
