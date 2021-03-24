@@ -4,6 +4,12 @@ layout: shop
 ---
 <div class="product">
 
+
+    <a href="/flower-shop" class="back-link mb-2em">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-modal__close-icon snipcart__icon--blue-light snipcart__icon"><path d="M12.636 30.158H58v3.423H12.372l9.148 9.055L19.132 45 6 32l13.132-13 2.388 2.364-8.884 8.794z" fill="#313749"></path></svg>
+      Back to all
+    </a>
+
   <div class="columns flex is-vcentered">
     <div class="column">
       <img src="{{ page.image }}" alt="{{ page.name }} product image" class="product__image">
@@ -13,7 +19,12 @@ layout: shop
 
         <h1 class="product__title">{{ page.name }}</h1>
         <h3 class="product__price">${{ page.price }}</h3>
-        <div class="product__description">{{ page.content }}</div>
+        <div class="product__description">
+          <p>{{ page.year}}, {{ page.material }}, {{ page.height }}" x {{ page.width }}" x {{ page.length }}"</p>
+          {% unless page.description == "hide" %}
+            {{ page.content }}
+          {% endunless %}
+        </div>
         <button
          class="buy-button snipcart-add-item button"
          data-item-id="{{ page.identifier }}"
@@ -23,7 +34,8 @@ layout: shop
          data-item-url="https://nickicherry.com{ page.url }}"
          data-item-description="{{ page.content | remove: '<p>' | remove: '</p>' }}"
          data-item-max-quantity="1"
-         data-item-stackable="always">
+         data-item-stackable="always"
+         data-item-weight="{{ page.weight }}">
          Add to cart
         </button>
      </div>

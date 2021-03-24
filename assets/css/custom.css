@@ -377,6 +377,13 @@ input:focus{
   background-color: #1a3f49;
 }
 
+a.back-link{
+  display: flex;
+  align-items: center;
+  color: #202228;
+  font-size: 0.75em;
+}
+
 /* work slides */
 
 figure.slide{
@@ -429,7 +436,7 @@ figure.slide figcaption{
 
 .product-group{
   margin-top: 2em;
-  padding-top: 1em;
+  padding-top: 0.25em;
   border-top: 1px solid #202228;
 }
 
@@ -482,8 +489,18 @@ figure.slide figcaption{
   text-decoration: none;
 }
 
-.snipcart__font--secondary, .snipcart__font--subtitle, .snipcart-cart-summary-fees__item.snipcart__font--slim, .snipcart-item-quantity__label.snipcart__font--tiny, .snipcart__font--std, legend{
+.snipcart, .snipcart__font--secondary, .snipcart__font--subtitle, .snipcart-modal__close, .snipcart__actions--link{
   font-family: 'Granville', serif !important;
+  font-weight: 400;
+}
+
+.snipcart__font--black, .snipcart__font--subtitle{
+  font-weight: 700;
+}
+
+.snipcart-item-line__title{
+  font-weight: 700;
+  font-style: italic;
 }
 
 .snipcart__font--tiny{
@@ -499,7 +516,6 @@ figure.slide figcaption{
 }
 
 .snipcart-cart-button{
-  font-family: 'Granville', serif;
   color: #fff !important;
   border-color: #3f707d;
   background-color: #3f707d;
@@ -532,7 +548,6 @@ figure.slide figcaption{
 .snipcart__actions--link{
   margin-top: 0.5em;
   color:#3f707d;
-  font-family: 'Granville', serif;
 }
 
 .snipcart__actions--link:hover{
@@ -545,7 +560,6 @@ figure.slide figcaption{
 
 .snipcart-form__label{
   font-family: 'Granville', serif;;
-  font-weight: 400;
 }
 
 .snipcart-input,
@@ -566,13 +580,6 @@ figure.slide figcaption{
   border: 1px solid #3f707d;
 }
 
-.snipcart__font--std.snipcart-item-description,
-.snipcart-item-quantity__label,
-.snipcart-modal__close-title,
-.snipcart-cart-header__count,
-.snipcart-item-quantity__label,{
-  font-weight: 400 !important;
-}
 
 .snipcart-cart-summary-fees__total{
   font-weight: 700;
@@ -581,8 +588,11 @@ figure.slide figcaption{
 .snipcart-cart-header__title,
 .snipcart-cart__secondary-header-title {
   font-size: 18px;
-  font-weight: bold;
-  text-decoration: underline;
+}
+
+.snipcart-checkbox:checked+label:before{
+  border: 1px solid #3f707d;
+  background-color: #3f707d;
 }
 
 .snipcart__icon--blue-light path,
@@ -597,8 +607,6 @@ figure.slide figcaption{
 }
 
 .snipcart-typeahead__suggestions{
-  font-family: 'Granville', serif;
-  font-weight: 400;
   border-color: #3f707d;
 }
 
@@ -630,6 +638,10 @@ button.snipcart-checkout{
 /* utility */
 .mb-1em{
   margin-bottom: 1em;
+}
+
+.mb-2em{
+  margin-bottom: 2em;
 }
 
 .text-bold{
