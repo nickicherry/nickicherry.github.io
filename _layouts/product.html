@@ -25,19 +25,93 @@ layout: shop
             {{ page.content }}
           {% endunless %}
         </div>
-        <button
-         class="buy-button snipcart-add-item button"
-         data-item-id="{{ page.identifier }}"
-         data-item-name="{{ page.name }}"
-         data-item-price="{{ page.price }}"
-         data-item-image="{{ page.image }}"
-         data-item-url="https://nickicherry.com{ page.url }}"
-         data-item-description="{{ page.content | remove: '<p>' | remove: '</p>' }}"
-         data-item-max-quantity="1"
-         data-item-stackable="always"
-         data-item-weight="{{ page.weight }}">
-         Add to cart
-        </button>
+        <div id='product-component-1616473045074'></div>
+                 <script type="text/javascript">
+                 /*<![CDATA[*/
+                 (function () {
+                   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                   if (window.ShopifyBuy) {
+                     if (window.ShopifyBuy.UI) {
+                       ShopifyBuyInit();
+                     } else {
+                       loadScript();
+                     }
+                   } else {
+                     loadScript();
+                   }
+                   function loadScript() {
+                     var script = document.createElement('script');
+                     script.async = true;
+                     script.src = scriptURL;
+                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                     script.onload = ShopifyBuyInit;
+                   }
+                   function ShopifyBuyInit() {
+                     var client = ShopifyBuy.buildClient({
+                       domain: 'nicki-cherry-studio.myshopify.com',
+                       storefrontAccessToken: 'a96dec9e1199785c9bac678053a8a5dd',
+                     });
+                     ShopifyBuy.UI.onReady(client).then(function (ui) {
+                       ui.createComponent('product', {
+                         id: '{{ page.shopify }}',
+                         node: document.getElementById('product-component-1616473045074'),
+                         moneyFormat: '%24%7B%7Bamount%7D%7D',
+                         options: {
+                   "product": {
+                     "iframe": false,
+
+                     "contents": {
+                       "img": false,
+                       "title": false,
+                       "price": false
+                     },
+                     "text": {
+                       "button": "Add to cart"
+                     },
+                   },
+                   "productSet": {
+                     "iframe": false,
+                     "styles": {
+                       "products": {
+                         "@media (min-width: 601px)": {
+                           "margin-left": "-20px"
+                         }
+                       }
+                     }
+                   },
+                   "modalProduct": {
+                     "iframe": false,
+                     "contents": {
+                       "img": false,
+                       "imgWithCarousel": true,
+                       "button": false,
+                       "buttonWithQuantity": true
+                     },
+                   },
+                   "option": {},
+                   "cart": {
+                     "iframe": false,
+                     "text": {
+                       "total": "Subtotal",
+                       "notice": "Shipping and taxes are calculated at checkout.",
+                       "button": "Checkout"
+                     },
+                     "popup": false
+                   },
+                   "toggle": {
+                     "iframe": false
+                   },
+                   "lineItem": {
+                     "iframe": false
+                   }
+                 },
+                       });
+                     });
+                   }
+                 })();
+                 /*]]>*/
+                 </script>
+
      </div>
     </div>
   </div>
