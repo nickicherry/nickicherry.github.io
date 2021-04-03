@@ -145,6 +145,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   text-decoration: underline;
 }
 
+.big-nav .menu-list li a.link-small{
+  font-size: calc(30px + 0.5vw);
+  margin-bottom: 0;
+}
+
 a.big-nav-menu-toggle.is-active{
   text-decoration: underline;
   background-color: unset;
@@ -761,8 +766,12 @@ button.snipcart-checkout{
 }
 
 .shopify-buy__cart__notice{
-  font-size: 0.7em;
+  font-size: 0.6em;
   margin-bottom: 1em;
+}
+
+.shopify-buy__collection{
+  display: none;
 }
 
 /* utility */
