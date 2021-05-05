@@ -10,7 +10,7 @@ width: 9.5
 length: 10
 material: "glazed stoneware"
 year: 2020
-description: "hide"
+shopify: 6656975306931
 ---
 
-Seated ceramic vessel
+12" x 9.5" x 10"

@@ -1,15 +1,18 @@
 ---
-identifier: petal-4
+identifier: petal-2
 name: Tulip petal
-price: 50
+price: 40
 image: /assets/img/products/petal/4.jpg
-category: "2 Petals: $50"
+category: "2 Petals: $40"
 weight: 300
 height: 1
 width: 1.5
 length: 2.75
 material: "glazed stoneware, wax, and pigment"
 year: 2021
+shopify: 6656961675443
 ---
 
 Hand-built orange ceramic tulip petal. The inside is glazed; the outside has a layer of pigmented paste wax.
+
+Each petal is about 1" x 1.5" x 2.75"

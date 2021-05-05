@@ -730,7 +730,7 @@ button.snipcart-checkout{
 
 .shopify-buy__cart__title{
   font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1em;
   padding-bottom: 0;
   margin-bottom: 1em;
   border-bottom: 1px solid #202228;
@@ -739,19 +739,76 @@ button.snipcart-checkout{
 .shopify-buy__cart-item__title{
   font-weight: 700;
   font-style: italic;
-  font-size: 1em;
+  font-size: 0.75em;
 }
 
 .shopify-buy__cart-item{
+  border-bottom: 1px solid #202228;
+  padding-bottom: 1em;
   margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.shopify-buy__cart-item:last-child{
+  border-bottom: none;
 }
 
 .shopify-buy__cart-item__price{
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: 0.75em;
 }
 
 .shopify-buy__quantity-container{
+  margin-top: 0.25em;
+}
+
+.shopify-buy__cart-item__image{
+  width: 60px;
+  height: 60px;
+  margin-right: 0.5em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shopify-buy__cart-item__price-and-discounts{
+  flex: 1;
+  text-align: right;
+}
+
+.shopify-buy__quantity-decrement{
+  font-family: 'Granville', serif;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  padding: 0.25em 0.5em;
+  background-color: #edf1f2;
+  color: #202228;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.shopify-buy__quantity-decrement:hover{
+  background-color: #e4e9eb;
+}
+
+.shopify-buy__quantity-decrement:after{
+  content: 'x   Remove item from cart'
+}
+
+.shopify-buy__quantity-decrement svg,
+.shopify-buy__quantity-decrement span.visuallyhidden{
+  display: none;
+}
+
+.shopify-buy__cart-item__quantity-input{
+  display: none;
+}
+
+.shopify-buy__quantity-increment{
   display: none;
 }
 
