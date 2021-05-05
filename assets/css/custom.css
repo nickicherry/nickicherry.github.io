@@ -726,6 +726,7 @@ button.snipcart-checkout{
 
 .shopify-buy__cart-scroll{
   flex-grow: 1;
+  overflow: scroll;
 }
 
 .shopify-buy__cart__title{
