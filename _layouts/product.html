@@ -4,6 +4,12 @@ layout: shop
 ---
 <div class="product">
 
+
+    <a href="/flower-shop" class="back-link mb-2em">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-modal__close-icon snipcart__icon--blue-light snipcart__icon"><path d="M12.636 30.158H58v3.423H12.372l9.148 9.055L19.132 45 6 32l13.132-13 2.388 2.364-8.884 8.794z" fill="#313749"></path></svg>
+      Back to all
+    </a>
+
   <div class="columns flex is-vcentered">
     <div class="column">
       <img src="{{ page.image }}" alt="{{ page.name }} product image" class="product__image">
@@ -13,19 +19,102 @@ layout: shop
 
         <h1 class="product__title">{{ page.name }}</h1>
         <h3 class="product__price">${{ page.price }}</h3>
-        <div class="product__description">{{ page.content }}</div>
-        <button
-         class="buy-button snipcart-add-item button"
-         data-item-id="{{ page.identifier }}"
-         data-item-name="{{ page.name }}"
-         data-item-price="{{ page.price }}"
-         data-item-image="{{ page.image }}"
-         data-item-url="https://nickicherry.com{ page.url }}"
-         data-item-description="{{ page.content | remove: '<p>' | remove: '</p>' }}"
-         data-item-max-quantity="1"
-         data-item-stackable="always">
-         Add to cart
-        </button>
+        <div class="product__description">
+          <p>{{ page.year}}, {{ page.material }}</p>
+          {% unless page.description == "hide" %}
+            {{ page.content }}
+          {% endunless %}
+        </div>
+        <div id='product-component-1616473045074'></div>
+                 <script type="text/javascript">
+                 /*<![CDATA[*/
+                 (function () {
+                   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                   if (window.ShopifyBuy) {
+                     if (window.ShopifyBuy.UI) {
+                       ShopifyBuyInit();
+                     } else {
+                       loadScript();
+                     }
+                   } else {
+                     loadScript();
+                   }
+                   function loadScript() {
+                     var script = document.createElement('script');
+                     script.async = true;
+                     script.src = scriptURL;
+                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                     script.onload = ShopifyBuyInit;
+                   }
+                   function ShopifyBuyInit() {
+                     var client = ShopifyBuy.buildClient({
+                       domain: 'nicki-cherry-studio.myshopify.com',
+                       storefrontAccessToken: 'a96dec9e1199785c9bac678053a8a5dd',
+                     });
+                     ShopifyBuy.UI.onReady(client).then(function (ui) {
+                       ui.createComponent('product', {
+                         id: '{{ page.shopify }}',
+                         node: document.getElementById('product-component-1616473045074'),
+                         moneyFormat: '%24%7B%7Bamount%7D%7D',
+                         options: {
+                   "product": {
+                     "iframe": false,
+
+                     "contents": {
+                       "img": false,
+                       "title": false,
+                       "price": false
+                     },
+                     "text": {
+                       "button": "Add to cart"
+                     },
+                   },
+                   "productSet": {
+                     "iframe": false,
+                     "styles": {
+                       "products": {
+                         "@media (min-width: 601px)": {
+                           "margin-left": "-20px"
+                         }
+                       }
+                     }
+                   },
+                   "modalProduct": {
+                     "iframe": false,
+                     "contents": {
+                       "img": false,
+                       "imgWithCarousel": true,
+                       "button": false,
+                       "buttonWithQuantity": true
+                     },
+                   },
+                   "option": {},
+                   "cart": {
+                     "iframe": false,
+                     "text": {
+                       "total": "Subtotal",
+                       "notice": "Shipping and taxes are calculated at checkout.",
+                       "button": "Checkout"
+                     },
+                     "popup": false
+                   },
+                   "toggle": {
+                     "iframe": false
+                   },
+                   "lineItem": {
+                      "contents": {
+                       "image": true
+                     },
+                     "iframe": false
+                   }
+                 },
+                       });
+                     });
+                   }
+                 })();
+                 /*]]>*/
+                 </script>
+
      </div>
     </div>
   </div>

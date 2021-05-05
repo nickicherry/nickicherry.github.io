@@ -1,15 +1,15 @@
 ---
-identifier: bulb-3
+identifier: bulb-1
 name: Tulip bulb
-price: 80
-image: /assets/img/products/bulbs/3.jpg
-category: "1 Bulbs: $80"
+price: 75
+image: /assets/img/products/bulbs/1.jpg
+category: "1 Bulbs: $75-100"
 height: 4
 width: 1
 length: 1
 material: "glazed stoneware"
 year: 2021
-shopify: 6594924511411
+shopify: 6586644594867
 ---
 
 A ceramic tulip bulb, inspired by  Hieronymus Bosch's depiction of the stone of madness as a sprouting tulip in his painting "Cutting the Stone."

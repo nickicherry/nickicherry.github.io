@@ -1,0 +1,116 @@
+<div id='collection-component-1616692353637'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'nicki-cherry-studio.myshopify.com',
+      storefrontAccessToken: 'a96dec9e1199785c9bac678053a8a5dd',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '264080261299',
+        node: document.getElementById('collection-component-1616692353637'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "iframe": false,
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "View product"
+    }
+  },
+  "productSet": {
+    "iframe": false
+  },
+  "modalProduct": {
+    "iframe": false,
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {
+    "iframe": false
+  },
+  "cart": {
+    "iframe": false,
+    "text": {
+      "total": "Subtotal",
+      "notice": "Shipping and taxes are calculated at checkout.",
+      "button": "Checkout"
+    },
+    "popup": false
+  },
+  "toggle": {
+    "iframe": false
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#202228"
+      },
+      "title": {
+        "color": "#202228"
+      },
+      "price": {
+        "color": "#202228"
+      },
+      "fullPrice": {
+        "color": "#202228"
+      },
+      "discount": {
+        "color": "#202228"
+      },
+      "discountIcon": {
+        "fill": "#202228"
+      },
+      "quantity": {
+        "color": "#202228"
+      },
+      "quantityIncrement": {
+        "color": "#202228",
+        "border-color": "#202228"
+      },
+      "quantityDecrement": {
+        "color": "#202228",
+        "border-color": "#202228"
+      },
+      "quantityInput": {
+        "color": "#202228",
+        "border-color": "#202228"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
