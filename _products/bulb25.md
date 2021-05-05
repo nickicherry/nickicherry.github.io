@@ -1,9 +1,9 @@
 ---
 identifier: bulb-25
 name: Moldy tulip bulb
-price: 80
+price: 75
 image: /assets/img/products/bulbs/25.jpg
-category: "1 Bulbs: $80"
+category: "1 Bulbs: $75"
 height: 4
 width: 1
 length: 1
