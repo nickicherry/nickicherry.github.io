@@ -18,7 +18,7 @@ layout: shop
       <h1 class="mb-1em"> {{ group.name | slice: 2,100000 }}</h1>
       <div class="product-grid-wrapper">
         {% for item in group.items %}
-          <a href="{{ item.url }}" class="product-grid">
+          <a href="{{ item.url }}" class="product-grid {% if item.sold %} sold {% endif %} ">
             <img src="{{ item.image }}" alt="{{ item.name }} product image" class="product__image">
           </a>
         {%endfor%}

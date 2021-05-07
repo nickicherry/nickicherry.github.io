@@ -457,6 +457,7 @@ figure.slide figcaption{
   display: block;
   cursor: pointer;
   line-height: 0;
+  position: relative;
 }
 
 .product-grid h2{
@@ -481,6 +482,20 @@ figure.slide figcaption{
 
 .product-grid .button.buy-button{
   margin-top: 0;
+}
+
+.product-grid.sold:after{
+  content: "Sold";
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  height: calc(100% - 1em);
+  width: calc(100% - 1em);
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff
 }
 
 .product{
