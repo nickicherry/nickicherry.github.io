@@ -10,6 +10,7 @@ length: 1
 material: "glazed stoneware"
 year: 2021
 shopify: 6594924511411
+sold: true
 ---
 
 A ceramic tulip bulb, inspired by  Hieronymus Bosch's depiction of the stone of madness as a sprouting tulip in his painting "Cutting the Stone."
