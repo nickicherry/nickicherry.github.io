@@ -11,6 +11,7 @@ length: 2.75
 material: "glazed stoneware, wax, and pigment"
 year: 2021
 shopify: 6594936471731
+sold: true
 ---
 
 Hand-built orange ceramic tulip petal. The inside is glazed; the outside has a layer of pigmented paste wax.
