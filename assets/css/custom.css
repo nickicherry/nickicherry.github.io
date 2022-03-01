@@ -31,10 +31,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 
 .tulip-bg{
-  background-image: url(../img/lubbert-bg.jpg);
+  background-image: url(../img/lithophyte-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% center;
+  background-position: 55% center;
   min-height: 100vh;
 }
 
