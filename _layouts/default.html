@@ -35,6 +35,7 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/js/nav.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
@@ -57,6 +58,15 @@
 
 <script>
   var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+<script>
+  $( function() {
+    $( ".nav-accordion" ).accordion({
+      heightStyle: "content",
+      animate: 300
+    });
+  } );
 </script>
 
 <div hidden id="snipcart" data-api-key="MTdiY2Q0YmYtNjU4MC00YjVjLTlhYjctNGFkZmYyOGU4NWIzNjM3NTEyNzg0OTY1OTA4MTM5"

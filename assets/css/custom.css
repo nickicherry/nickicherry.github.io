@@ -42,6 +42,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   background-color: #fff;
 }
 
+.tulip-bg + .white-bg{
+  z-index: 100;
+}
+
 .navbar{
   position: fixed;
   top: 0;
@@ -52,7 +56,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .navbar.home{
   background-color: unset;
-  position: fixed;
 }
 .navbar-brand .navbar-item{
   font-family: Granville, serif;
@@ -237,6 +240,30 @@ a.big-nav-menu-toggle.is-active{
 .work-sidebar h3.date{
   font-size: 14px;
   margin-top: 20px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.work-sidebar h3.date:focus{
+  outline: none;
+}
+
+.work-sidebar h3.date:after{
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  transform: rotate(45deg);
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  top: 0.125em;
+  right: 0.125em;
+  transition: all 0.3s ease;
+}
+
+.work-sidebar h3.date.ui-accordion-header-collapsed:after{
+  transform: rotate(-45deg);
 }
 
 .work-sidebar .close{
