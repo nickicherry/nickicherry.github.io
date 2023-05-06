@@ -424,13 +424,13 @@ figure.slide{
 
 figure.slide img{
   max-height: 85vh;
-  margin-bottom: 5px;
 }
 
 figure.slide figcaption{
   font-size: calc(12px + 0.5vw);
   font-weight: 200;
   max-width: 1000px;
+  margin-top: 5px;
 }
 
 /* masonry grid */
@@ -893,6 +893,119 @@ button.snipcart-checkout{
 
 .text-bold{
   font-weight: 700;
+}
+
+.italic{
+  font-style: italic;
+}
+
+/* tulip slides */
+
+.tulips-container {
+  position: relative;
+  display: block;
+  aspect-ratio: 2 / 3;
+  max-width: 100%;
+  height: 85vh;
+}
+
+.tulip-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation: fade 20s infinite;
+  animation: fade 12s infinite;
+}
+
+#tulip1 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/tulip1.jpg');
+  animation-delay: 0s;
+}
+#tulip2 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/tulip2.jpg');
+  animation-delay: 3s;
+}
+#tulip3 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/tulip3.jpg');
+  animation-delay: 6s;
+}
+#tulip4 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/tulip4.jpg');
+  animation-delay: 9s;
+}
+
+#secrets1 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/i-keep-my-secrets-1.jpg');
+  animation-delay: 0s;
+}
+#secrets2 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/i-keep-my-secrets-2.jpg');
+  animation-delay: 3s;
+}
+#secrets3 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/i-keep-my-secrets-3.jpg');
+  animation-delay: 6s;
+}
+#secrets4 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/i-keep-my-secrets-4.jpg');
+  animation-delay: 9s;
+}
+
+#sensation1 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/sensation-1.jpg');
+  animation-delay: 0s;
+}
+#sensation2 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/sensation-2.jpg');
+  animation-delay: 3s;
+}
+#sensation3 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/sensation-3.jpg');
+  animation-delay: 6s;
+}
+#sensation4 {
+  background-image: url('../img/work/2023/doctrine-of-signatures/sensation-4.jpg');
+  animation-delay: 9s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  88% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  88% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 1024px){
