@@ -905,7 +905,6 @@ button.snipcart-checkout{
   position: relative;
   display: block;
   aspect-ratio: 2/3;
-  max-width: 100%;
   max-height: 85vh;
 }
 
