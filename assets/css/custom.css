@@ -917,7 +917,7 @@ button.snipcart-checkout{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-animation: fade 20s infinite;
+  -webkit-animation: fade 10s infinite;
   animation: fade 10s infinite;
 }
 
