@@ -918,41 +918,41 @@ button.snipcart-checkout{
   background-position: center;
   background-repeat: no-repeat;
   -webkit-animation: fade 20s infinite;
-  animation: fade 12s infinite;
+  animation: fade 10s infinite;
 }
 
 #tulip1 {
   background-image: url('../img/work/2023/doctrine-of-signatures/tulip3.jpg');
-  animation-delay: 0s;
+  animation-delay: 0ms;
 }
 #tulip2 {
   background-image: url('../img/work/2023/doctrine-of-signatures/tulip4.jpg');
-  animation-delay: 3s;
+  animation-delay: 2500ms;
 }
 #tulip3 {
   background-image: url('../img/work/2023/doctrine-of-signatures/tulip1.jpg');
-  animation-delay: 6s;
+  animation-delay: 5000ms;
 }
 #tulip4 {
   background-image: url('../img/work/2023/doctrine-of-signatures/tulip2.jpg');
-  animation-delay: 9s;
+  animation-delay: 7500ms;
 }
 
 #secrets1 {
   background-image: url('../img/work/2023/doctrine-of-signatures/i-keep-my-secrets-4.jpg');
-  animation-delay: 0s;
+  animation-delay: 0ms;
 }
 #secrets2 {
   background-image: url('../img/work/2023/doctrine-of-signatures/i-keep-my-secrets-1.jpg');
-  animation-delay: 3s;
+  animation-delay: 2500ms;
 }
 #secrets3 {
   background-image: url('../img/work/2023/doctrine-of-signatures/i-keep-my-secrets-2.jpg');
-  animation-delay: 6s;
+  animation-delay: 5000ms;
 }
 #secrets4 {
   background-image: url('../img/work/2023/doctrine-of-signatures/i-keep-my-secrets-3.jpg');
-  animation-delay: 9s;
+  animation-delay: 7500ms;
 }
 
 #sensation1 {
@@ -961,15 +961,15 @@ button.snipcart-checkout{
 }
 #sensation2 {
   background-image: url('../img/work/2023/doctrine-of-signatures/sensation-1.jpg');
-  animation-delay: 3s;
+  animation-delay: 2500ms;
 }
 #sensation3 {
   background-image: url('../img/work/2023/doctrine-of-signatures/sensation-2.jpg');
-  animation-delay: 6s;
+  animation-delay: 5000ms;
 }
 #sensation4 {
   background-image: url('../img/work/2023/doctrine-of-signatures/sensation-3.jpg');
-  animation-delay: 9s;
+  animation-delay: 7500ms;
 }
 
 @-webkit-keyframes fade {
