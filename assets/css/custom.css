@@ -4,7 +4,7 @@ html{
 }
 
 body{
-  font-family: 'EB Garamond', serif;
+  font-family: 'kepler-std-semicondensed', serif;
   font-size: 16px;
   line-height: 1.3;
   color: #202228;
@@ -53,7 +53,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   left: auto;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #fff;
+  background-color: unset;
 }
 
 .navbar-menu{
@@ -136,7 +136,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .big-nav .menu-list li a{
-  font-family: 'EB Garamond', serif;
+  font-family: 'kepler-std-semicondensed', serif;
   font-weight: 300;
   font-style: normal;
   font-size: 6rem;
@@ -324,17 +324,16 @@ h1{
 
 h2{
   font-size: 1.15rem;
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
 h3{
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 0.5em;
   margin-top: 2em;
   text-decoration: underline;
-  font-style: italic;
 }
 
 h2 + .slide{
@@ -370,7 +369,7 @@ input{
   margin-bottom: 1em;
   font-size: 1rem;
   padding: 0.5em;
-  font-family: 'EB Garamond', serif;
+  font-family: 'kepler-std-semicondensed', serif;
   color: #202228;
   font-weight: 400;
   border: 1px solid #bec3c4;
@@ -394,7 +393,7 @@ input:focus{
 }
 
 .button{
-  font-family: 'EB Garamond', serif;
+  font-family: 'kepler-std-semicondensed', serif;
   color: #fff;
   border-color: #3f707d;
   background-color: #3f707d;
@@ -434,7 +433,7 @@ figure.slide img{
 
 figure.slide figcaption{
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 400;
   max-width: 1000px;
   margin-top: 5px;
 }
@@ -543,7 +542,7 @@ figure.slide figcaption{
 }
 
 .snipcart, .snipcart__font--secondary, .snipcart__font--subtitle, .snipcart-modal__close, .snipcart__actions--link{
-  font-family: 'EB Garamond', serif !important;
+  font-family: 'kepler-std-semicondensed', serif !important;
   font-weight: 400;
 }
 
@@ -612,7 +611,7 @@ figure.slide figcaption{
 }
 
 .snipcart-form__label{
-  font-family: 'EB Garamond', serif;;
+  font-family: 'kepler-std-semicondensed', serif;;
 }
 
 .snipcart-input,
@@ -670,7 +669,7 @@ figure.slide figcaption{
 .snipcart-error-message,
 .snipcart-shipping-address__subtitle{
   font-weight: 700 !important;
-  font-family: 'EB Garamond', serif !important;
+  font-family: 'kepler-std-semicondensed', serif !important;
   text-decoration: none;
 }
 
@@ -691,7 +690,7 @@ button.snipcart-checkout{
 /*shopify*/
 
 .shopify-buy-frame .shopify-buy__btn {
-  font-family: 'EB Garamond', serif;
+  font-family: 'kepler-std-semicondensed', serif;
   color: #fff;
   border: 1px solid #3f707d;
   background-color: #3f707d;
@@ -837,7 +836,7 @@ button.snipcart-checkout{
 }
 
 .shopify-buy__quantity-decrement{
-  font-family: 'EB Garamond', serif;
+  font-family: 'kepler-std-semicondensed', serif;
   font-size: 12px;
   outline: none;
   border: none;
