@@ -60,6 +60,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .navbar.home{
   background-color: unset;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
   z-index: 1000;
 }
 
