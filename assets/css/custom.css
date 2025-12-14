@@ -1065,6 +1065,11 @@ button.snipcart-checkout{
 
 
 @media screen and (max-width: 1024px){
+  .navbar.home{
+    right: unset;
+    width: auto;
+  }
+
   .work-sidebar{
     position: fixed;
     top: 0;
@@ -1103,6 +1108,7 @@ button.snipcart-checkout{
     min-height: 100%;
     display: flex;
     align-items: center;
+    padding-right: 1em;
   }
 
   .work-sidebar .container.work-nav{
@@ -1115,6 +1121,7 @@ button.snipcart-checkout{
     top: 2%;
     right: 5%;
     font-size: 20px;
+    pointer-events: auto;
   }
 
   .mobile-work{
