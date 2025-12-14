@@ -29,6 +29,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   background: none;
 }
 
+hr.divider{
+  height: 1px;
+  width: 100%;
+  background-color: #202228;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 
 .tulip-bg{
   background-image: url(../img/lithophyte-1.jpg);
