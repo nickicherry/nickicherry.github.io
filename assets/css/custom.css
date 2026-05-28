@@ -363,7 +363,7 @@ p{
 }
 
 h1, h2, figcaption{
-  max-width: 800px;
+  max-width: 750px;
 }
 
 /* form */
@@ -451,7 +451,7 @@ figure.slide img{
 figure.slide figcaption{
   font-size: 1rem;
   font-weight: 400;
-  max-width: 1000px;
+  max-width: 750px;
   margin-top: 5px;
 }
 
